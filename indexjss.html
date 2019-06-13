@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+	<link rel="stylesheet" href="css/java.css"/>
+</head>
+<body onload="showDate()">
+<div class="header">
+	<h1 id="heading">Learning JavaScript</h1>
+	<p>With Brad Traversy</p>
+</div>
+
+<div class="container">
+	<button onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+
+	<h1 id="time"></h1>
+</div>
+
+<script>
+function showDate(){
+		var time = document.getElementById('time');
+		time.innerHTML = Date();
+}
+
+function clearDate(){
+		var time = document.getElementById('time');
+		time.innerHTML = '';
+}
+	//Numbers
+	//String
+	//Arrays
+	//Objects
+
+
+	// VARIABLES contain letters, numbers, underscores, dollar signs
+	// should begin with a letter
+	// can be started with a _ $
+	// case sensitive
+
+	//var test = "This is a test";
+	//var Test = "This is another test";
+
+	//alert(Test);
+
+	// Variable styles- camel case
+
+	//var myFavoriteNumber;
+	//myFavoriteNumber = 5;
+
+	//partial case
+
+	//var myFavoriteNumber;
+
+	//underscore
+
+	//var my_favorite_number;
+
+	//ARRAYS
+
+	// .push is a function/method
+
+	// length is a property/attribute
+
+	//var numbers = [5,77,5,'Seven',1,55];
+
+	//alert(numbers.reverse());
+
+	//LOOPS
+
+	//Conditionals
+
+	/*Object Literal
+	var person = {
+		firstName: "Brad",
+		lastName: "Traversy",
+		age: 34,
+		children: ['Brianna', 'Nicholas'],
+		address: {
+			street: "555 something str",
+			city: 'Baltimore',
+			state:'MD'
+		},
+		fullName: function(){
+			return this.fullName +""+ this.lastName;
+		}
+	}
+
+	console.log(person.fullName());*/
+
+	/*Object Constructor
+	var apple =new Object();
+	apple.color = 'red';
+	apple.shape = 'round';
+
+	apple.describe = function(){
+		return 'An apple is the color '+this.color+'and is the shape '+this.shape;
+	}
+
+	console.log(apple.describe());*/
+
+	/*Constructor pattern
+	function Fruit(name, color, shape){
+		this.name = name;
+		this.color =color;
+		this.shape = shape;
+
+		this.describe = function(){
+			return 'A '+this.name+ ' is the color '+this.color+ ' and is the shape '+this.shape 
+		}
+	}
+
+	var apple = new Fruit("apple", "red", "round");
+
+	var melon = new Fruit("melon", "green", "round");
+
+	console.log(melon.describe());*/
+
+	/*var users = [
+		{
+			name: "John Doe",
+			age: 30
+		},
+		{
+			name: "Mark Smith",
+			age: 44
+		},
+		{
+			name: "Shelly Williams",
+			age: 20
+		}
+	];
+
+	console.log(users[1].name);*/
+
+
+
+</script>
+</body>
+</html>
